@@ -1,24 +1,41 @@
 # 🔥 Multi-Agent Research System
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
-[![LangChain](https://img.shields.io/badge/LangChain-0.1+-green.svg)](https://www.langchain.com/)
-[![Mistral AI](https://img.shields.io/badge/Mistral%20AI-Powered-orange.svg)](https://mistral.ai/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![GitHub stars](https://img.shields.io/github/stars/mohit-rahangdale/Multi-agent-research-system)](https://github.com/mohit-rahangdale/Multi-agent-research-system/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/mohit-rahangdale/Multi-agent-research-system)](https://github.com/mohit-rahangdale/Multi-agent-research-system/issues)
+An AI-powered **multi-agent research pipeline** that autonomously searches, analyzes, writes, and critiques research reports using LLMs and tools.
 
-An intelligent, autonomous research pipeline powered by multiple specialized AI agents that work together to gather, analyze, and synthesize information from the web with a beautiful orange and black themed interface.
+Built with **LangChain, Streamlit, Tavily API, and Mistral AI**.
 
-## 📸 Screenshots
+---
 
-| Main Interface | Research Pipeline |
-|----------------|-------------------|
-| ![Main UI](https://via.placeholder.com/400x300?text=Orange+Black+Theme+UI) | ![Pipeline](https://via.placeholder.com/400x300?text=Agents+Working) |
+## 🚀 Features
 
-| Final Report | Critic Feedback |
-|--------------|-----------------|
-| ![Report](https://via.placeholder.com/400x300?text=Generated+Report) | ![Feedback](https://via.placeholder.com/400x300?text=Quality+Feedback) |
+- 🔍 **Search Agent** → Finds relevant and recent information from the web  
+- 📖 **Reader Agent** → Extracts detailed content from selected URLs  
+- ✍️ **Writer Agent** → Generates structured research reports  
+- 🎯 **Critic Agent** → Evaluates and improves the report quality  
+- 🖥️ **Interactive UI (Streamlit)** with history & download option  
 
-## 🏗️ System Architecture Flow
+---
+
+## 🧠 System Architecture
+
+The system follows a **multi-agent pipeline**, where each agent performs a specialized task.
+
+### 🔄 Flowchart
+
+```mermaid
+flowchart TD
+
+A[User Input Topic] --> B[Search Agent 🔍]
+B --> C[Web Search Tool (Tavily API)]
+
+C --> D[Reader Agent 📖]
+D --> E[Scrape URL Tool]
+
+E --> F[Writer Agent ✍️]
+F --> G[Generate Research Report]
+
+G --> H[Critic Agent 🎯]
+H --> I[Feedback & Score]
+
+I --> J[Final Output in UI]
+
