@@ -1,0 +1,55 @@
+ # Core LLM + LangChain ecosystem
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-mistralai
+
+
+# LCEL + Runnable support
+langchainhub
+
+# OpenAI
+openai
+
+# Tavily Search Tool
+tavily-python>=0.3.3
+
+# Web Scraping
+beautifulsoup4>=4.12.3
+requests>=2.31.0
+lxml>=5.2.1
+
+# Environment Variables
+python-dotenv>=1.0.1
+
+# Async support
+aiohttp>=3.9.5
+
+# Data handling
+pydantic>=2.7.0
+
+# Optional but useful
+rich>=13.7.1          # better terminal output
+tqdm>=4.66.4         # progress bars
+tenacity>=8.2.3      # retry logic
+
+# If you plan embeddings / vector DB
+faiss-cpu>=1.8.0
+tiktoken>=0.7.0
+
+# For JSON handling and pipelines
+orjson>=3.10.3
+
+# If using FastAPI (optional for API layer)
+fastapi>=0.111.0
+uvicorn>=0.30.0
+
+
+streamlit>=1.28.0
+langchain>=0.1.0
+langgraph>=0.0.20
+tavily-python>=0.3.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+python-dotenv>=1.0.0
